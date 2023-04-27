@@ -3,8 +3,8 @@ import json
 import socketserver
 import urllib,urllib.request
 PORT = 8003
-api_key = "AIzaSyBLLMaRNAmC-GZAv_pJQ8SLEy4SQV1pIf4"
-cx = "12f9bb05f7a374333"
+api_key = "1AIzaSyBLLMaRNAmC-GZAv_pJQ8SLEy4SQV1pIf4"
+cx = "112f9bb05f7a374333"
 
 class SearchHandler(http.server.BaseHTTPRequestHandler):
     def do_GET(self):
