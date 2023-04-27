@@ -2,7 +2,7 @@ import smtplib
 smtp_server = 'smtp.gmail.com'
 smtp_port = 587
 smtp_username = 'y.r.reutov@student.khai.edu'
-smtp_password = 'frjrigxivgbcurfx'
+smtp_password = '1frjrigxivgbcurfx'
 from_address = 'y.r.reutov@student.khai.edu'
 to_address = 'reeutov.z@gmail.com'
 subject = 'Practic 1'
