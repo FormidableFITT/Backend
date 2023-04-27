@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body> <h2>Коментарии</h2>
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Подтвердить</button>
+  </form>
+
+  <h2>Comments</h2>
+<ul>
+{% for c in comments %}
+  <li><h2>Имя:{{ c.name }}</h2>
+      <p> Почта:{{ c.email }} <br>
+      Содержание коментария:{{ c.text }}</p></li>
+{% empty %}
+  <li>Нет коментариев.</li>
+{% endfor %}
+</ul>
+
+</body>
+</html>
